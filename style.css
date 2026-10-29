@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f0ff;
+    color: #333;
+}
+
+header {
+    background-color: #6c4ab6;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+header h1 {
+    font-size: 28px;
+}
+
+header input {
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    width: 220px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 8px;
+    font-weight: bold;
+}
+
+main {
+    display: flex;
+    gap: 20px;
+    padding: 25px;
+    align-items: flex-start;
+}
+
+.sidebar, .right {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    width: 230px;
+    box-shadow: 0 2px 8px #ddd;
+}
+
+.sidebar h2, .right h2 {
+    margin-bottom: 20px;
+    color: #6c4ab6;
+}
+
+.sidebar p, .right p {
+    margin-bottom: 18px;
+    cursor: pointer;
+}
+
+.content {
+    flex: 1;
+}
+
+.post-box, .post {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px #ddd;
+}
+
+.post-box h2 {
+    margin-bottom: 15px;
+    color: #6c4ab6;
+}
+
+textarea {
+    width: 100%;
+    height: 80px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    resize: vertical;
+    font-family: Arial, sans-serif;
+}
+
+button {
+    background-color: #6c4ab6;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    margin-top: 12px;
+    margin-right: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #50358d;
+}
+
+.post h3 {
+    margin-bottom: 15px;
+    color: #6c4ab6;
+}
+
+.post p {
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+.likes {
+    color: #e74c78;
+}
+
+footer {
+    background-color: #6c4ab6;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: 20px;
+}
+
+@media (max-width: 900px) {
+    main {
+        flex-wrap: wrap;
+    }
+
+    .sidebar, .right {
+        width: 100%;
+    }
+
+    .content {
+        width: 100%;
+    }
+}
